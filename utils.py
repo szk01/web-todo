@@ -12,3 +12,6 @@ def log(*args, **kwargs):
     dt = time.strftime(format, value)
     with open('log.gua.txt', 'a', encoding='utf-8') as f:
         print(dt, *args, file=f, **kwargs)
+
+        
+# 两个模块（class）分别负责不同的功能，需要交流信息（传递变量时），写在同一个主函数，逻辑处理流程中。
